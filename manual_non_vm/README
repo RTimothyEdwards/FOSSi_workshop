@@ -1,0 +1,34 @@
+For workshop attendees working directly on a linux system, the VM
+can be used, or one of the following solutions:
+
+(1) Docker---Use the docker container from IIC-JKU:
+	https://github.com/iic-jku/IIC-OSIC-MULTITOOL
+
+    note that this is a large docker container as it contains
+    multiple PDKs.
+
+    Within the docker container, install CACE:
+	python3 -m pip install cace
+
+(2) Local install---Install the necessary tools and PDKs from sources
+    locally.  Note that compiling the sky130 PDK can take a long time
+    on a machine with few cores.  A pre-built PDK can be obtained from
+    volare.
+
+    Needed tools (essential):
+	ngspice:  https://sourceforge.net/projects/ngspice
+	magic:	https://github.com/RTimothyEdwards/magic
+	xschem:  https://github.com/StefanSchippers/xschem
+	
+    PDK:
+	open_pdks: https://github.com/RTimothyEdwards/open_pdks
+    (or)
+	volare:  python3 -m pip install volare
+
+After the tools and PDK are installed, get the example repositories:
+
+    https://github.com/RTimothyEdwards/sky130_ef_ip__instramp
+    https://github.com/RTimothyEdwards/sky130_ef_ip__rdac3v_8bit
+
+    https://github.com/RTimothyEdwards/sky130_ef_ip__xtal_osc_32k
+    https://github.com/b-etz/sky130_be_ip__lsxo
