@@ -53,12 +53,11 @@ Whether you use the provided VM or not, you need these applications and librarie
 Once you have the sky130 PDK, you need to set environment variables for PDK_ROOT
 and PDK to point to the root of all PDKs and the sky130 PDK name, respectively;
 e.g.,
-	export PDK_ROOT=$HOME/.volare/pdks
+	export PDK_ROOT=$HOME/.volare
 	export PDK=sky130A
 
 This will inform CACE where the PDK is located, although CACE will also try to
 find the PDK in various standard locations.
-
 
 ## The Workshop
 
